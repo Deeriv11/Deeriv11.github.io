@@ -1,0 +1,41 @@
+@keyframes spin {
+0% {transform: rotate(0deg);}
+100% {transform: rotate(360deg);}
+}
+
+
+@keyframes hour {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(30deg);}
+}
+
+body{background-color:rgb(209, 195, 212);}
+
+
+.clockBody{position: relative;
+top:0;
+left: 15%;}
+
+
+.img1{width:70%;
+heigh:900px;}
+
+.img2{width:30%;
+  height: auto;
+  transform: rotate(270deg);}
+
+.img3{width:30%;
+  height:auto;}
+
+
+.minute{position:absolute;
+bottom:55%;
+margin-left:23.5%;
+animation: spin 10s;
+transform-origin:left;}
+
+.hour{position:absolute;
+top:101.5%;
+margin-left:14.3%;
+animation: hour 10s;
+transform-origin: left;}
